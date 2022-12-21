@@ -50,12 +50,12 @@
         <div class="col-md">
           <label class="form-label">Operator</label>
           <div class="col-md">
-            <select class="form-select" aria-label="Default select example">
-            <option selected>---pilih---</option>
-            <option value="1">Perkalian</option>
-            <option value="2">Pengurangan</option>
-            <option value="3">Penjumlahan</option>
-            <option value="4">Pembagian</option>
+            <select class="form-select" aria-label="Default select example" id="operator">
+            <option selected value="">---pilih---</option>
+            <option value="*">Perkalian</option>
+            <option value="-">Pengurangan</option>
+            <option value="+">Penjumlahan</option>
+            <option value="/">Pembagian</option>
           </select>
           </div>
         </div>
@@ -63,17 +63,22 @@
       <div class="mb-3 row">
         <div class="col-md">
           <div class="d-grid gap-2">
-            <button class="btn btn-primary" type="button">Button</button>
+            <button class="btn btn-primary" id="oke" type="button" onclick="Menghitung()"><i class="bi bi-save"></i> Proses</button>
+            <hr>
           </div>
+            <div class="alert alert-primary" role="alert" id="hasilkalkulator" style="display: none">     
+            </div>
         </div>
       </div>
       <hr>
-      <button class="btn btn-secondary" type="reset">Reset</button>
+      <button class="btn btn-secondary" type="reset" onclick="hilang()">Reset</button>
     </div>
     <div class="col-md-1"></div>
   </div>
+  
 </form>
 
 </section>
+<script src="Asset/Main.js"></script>
 </body>
 </html>
