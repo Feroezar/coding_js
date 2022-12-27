@@ -36,8 +36,14 @@
 //     document.write(tahun+bulan+tanggal);
 //     // tanggal = document.getElementById("daftar").value = "MHS+tahun + bulan + tanggal"
 // }
-function randomDate(start, end) {
-    return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()))
-  }
-  
-  console.log(randomDate(new Date(2022, 0, 1), new Date()))
+function tanggalran(){
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+var tanggal
+
+today = mm + dd + yyyy;
+tanggal = document.getElementById("daftar").value = "";
+// document.write(today);
+}
