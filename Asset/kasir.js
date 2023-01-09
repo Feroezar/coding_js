@@ -30,7 +30,7 @@ document.getElementById("btn").onclick = function(){
             pembayaran = "Non-Tunai"};
 
     let harga = document.getElementById('harga').value;
-            
+    
     total(jb,harga); 
             
     document.getElementById('data1').innerHTML = menu;
@@ -50,13 +50,18 @@ function combobox(){
             document.getElementById('data3').innerHTML="Snack";
         }
 }
-function total(jb,harga){
+function total(jb,harga){ 
+    let diskon;  
     if(jb > 10){
-        document.getElementById('data5').innerHTML = "2%"
-    }
-    if(document.getElementById('data5').value = "2%"){
+        diskon = document.getElementById('data5').innerHTML = "2%"
+    } 
+    if(diskon == "2%"){
         let first = (jb*harga)*2/100;
         let sc = (jb*harga)-first;
         document.getElementById('data6').innerHTML = sc;
+    }
+    else{
+        first = (jb*harga);
+        document.getElementById('data6').innerHTML = first;
     }
 }
