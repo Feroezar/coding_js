@@ -53,7 +53,9 @@ function combobox(){
 function total(jb,harga){ 
     let diskon;  
     if(jb > 10){
-        diskon = document.getElementById('data5').innerHTML = "2%"
+        diskon = document.getElementById('data5').innerHTML = "2%";
+    }else {
+        diskon = document.getElementById('data5').innerHTML = "0%";
     } 
     if(diskon == "2%"){
         let first = (jb*harga)*2/100;
