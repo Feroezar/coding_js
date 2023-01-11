@@ -39,8 +39,13 @@
                 </div>
                 <div class="mb-3 row">
                     <div class="col-md-3">Nama Menu :</div>
-                    <div class="col-md">
-                        <input id="nmenu" class="form-control" type="text" placeholder="Nama Menu" aria-label="default input example">
+                    <div class="col-md">            
+                        <select class="form-select" aria-label="" id="nm">
+                            <option value="">---Menu---</option>
+                            <option value="bakso">bakso</option>
+                            <option value="mieayam">Mie Ayam</option>
+                            <option value="esteh">Es teh</option>
+                        </select>
                     </div>
                 </div>
                 <div class="mb-3 row">
@@ -48,9 +53,9 @@
                     <div class="col-md">
                         <select class="form-select" aria-label="" id="jm">
                             <option value="">---pilih---</option>
-                            <option value="Makanan" id="mn">Makanan</option>
-                            <option value="Minuman" id="mi">Minuman</option>
-                            <option value="Snack" id="sn">Snack</option>
+                            <option value="Makanan">Makanan</option>
+                            <option value="Minuman">Minuman</option>
+                            <option value="Snack">Snack</option>
                         </select>
                     </div>
                 </div>
@@ -68,22 +73,22 @@
                 </div> 
                 <div class="mb-3 row">
                     <div class="col-md-3">Pembayaran :</div>
-                    <div class="col-md">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="tn" value="Tunai" checked>
+                    <div class="col-md-9" name="jenisbayar" id="jenisbayar">
+                        <!-- <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="tn" value="Tunai" >
                             <label class="form-check-label" for="flexRadioDefault2">
                                 Tunai
                             </label>                
-                        </div>
+                        </div> -->
                     </div>
-                    <div class="col-md">
+                    <!-- <div class="col-md">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="ntn" value="Non-Tunai" checked>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="ntn" value="Non-Tunai" >
                             <label class="form-check-label" for="flexRadioDefault2">
                               Non-Tunai
                             </label>
                         </div>   
-                    </div>
+                    </div> -->
                 </div>
                 <div class="mb-3 row">
                     <div class="col-md-3"></div>
